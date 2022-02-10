@@ -3349,7 +3349,7 @@ hdd_association_completion_handler(struct hdd_adapter *adapter,
 		if (!reqRsnIe)
 			return QDF_STATUS_E_NOMEM;
 
-                if (roam_info->fReassocReq || ft_carrier_on)
+		if (roam_info->fReassocReq || ft_carrier_on)
 			hdd_nud_indicate_roam(adapter);
 
 		/*
